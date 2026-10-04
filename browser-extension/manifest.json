@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Owner Guard",
+  "version": "0.1.0",
+  "description": "Private owner browser guard for suspicious domain blocking and event reporting.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "webRequest",
+    "cookies",
+    "downloads",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Owner Guard",
+    "default_popup": "popup.html"
+  }
+}
